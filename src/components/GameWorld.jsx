@@ -6,6 +6,7 @@ import Player from './Player'
 import Block from './Block'
 import Water from './Water'
 import Vegetation from './Vegetation'
+import Clouds from './Clouds'
 
 function GameWorld() {
   const controlsRef = useRef()
@@ -47,6 +48,7 @@ function GameWorld() {
       <Terrain onClick={handleGroundClick} />
       <Water />
       <Vegetation />
+      <Clouds />
       <Player />
       {blocks.map(block => (
         <Block

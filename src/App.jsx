@@ -4,6 +4,7 @@ import { Sky } from '@react-three/drei'
 import { GameProvider } from './game/GameContext'
 import GameWorld from './components/GameWorld'
 import Inventory from './components/Inventory'
+import GameInstructions from './components/GameInstructions'
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <GameWorld />
         </Canvas>
         <Inventory />
+        <GameInstructions />
       </div>
     </GameProvider>
   )
