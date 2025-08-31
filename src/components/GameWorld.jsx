@@ -7,10 +7,11 @@ import Block from './Block'
 import Water from './Water'
 import Vegetation from './Vegetation'
 import Clouds from './Clouds'
+import Particles from './Particles'
 
 function GameWorld() {
   const controlsRef = useRef()
-  const { blocks, removeBlock, addBlock } = useGame()
+  const { blocks, removeBlock, addBlock, particles, removeParticle } = useGame()
 
   const handleBlockClick = (blockId, event) => {
     event.stopPropagation()
@@ -56,6 +57,14 @@ function GameWorld() {
           position={block.position}
           type={block.type}
           onClick={(event) => handleBlockClick(block.id, event)}
+        />
+      ))}
+      {particles.map(particle => (
+        <Particles
+          key={particle.id}
+          position={particle.position}
+          active={particle.active}
+          onComplete={() => removeParticle(particle.id)}
         />
       ))}
     </>

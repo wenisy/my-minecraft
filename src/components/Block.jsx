@@ -18,6 +18,16 @@ function Block({ position, type, onClick }) {
         return '#f4e4bc'
       case 'snow':
         return '#ffffff'
+      case 'diamond':
+        return '#B9F2FF'
+      case 'iron':
+        return '#D3D3D3'
+      case 'gold':
+        return '#FFD700'
+      case 'coal':
+        return '#2F2F2F'
+      case 'emerald':
+        return '#50C878'
       default:
         return '#808080'
     }

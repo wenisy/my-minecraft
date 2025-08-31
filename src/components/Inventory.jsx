@@ -13,8 +13,11 @@ function Inventory() {
     { id: 5, type: 'water', count: 24 },
     { id: 6, type: 'sand', count: 32 },
     { id: 7, type: 'snow', count: 16 },
-    { id: 8, type: null, count: 0 },
-    { id: 9, type: null, count: 0 },
+    { id: 8, type: 'diamond', count: 8 },
+    { id: 9, type: 'iron', count: 16 },
+    { id: 10, type: 'gold', count: 12 },
+    { id: 11, type: 'coal', count: 24 },
+    { id: 12, type: 'emerald', count: 4 },
   ])
 
   const toggleInventory = () => {

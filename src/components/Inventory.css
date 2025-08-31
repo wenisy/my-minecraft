@@ -31,7 +31,7 @@
 
 .inventory-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   margin-top: 20px;
 }
@@ -107,6 +107,45 @@
   background: #ffffff;
   border-radius: 2px;
   border: 1px solid #ddd;
+}
+
+.item-diamond {
+  width: 40px;
+  height: 40px;
+  background: #B9F2FF;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(185, 242, 255, 0.5);
+}
+
+.item-iron {
+  width: 40px;
+  height: 40px;
+  background: #D3D3D3;
+  border-radius: 2px;
+  border: 1px solid #A9A9A9;
+}
+
+.item-gold {
+  width: 40px;
+  height: 40px;
+  background: #FFD700;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+.item-coal {
+  width: 40px;
+  height: 40px;
+  background: #2F2F2F;
+  border-radius: 2px;
+}
+
+.item-emerald {
+  width: 40px;
+  height: 40px;
+  background: #50C878;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(80, 200, 120, 0.4);
 }
 
 .item-count {
