@@ -79,6 +79,36 @@
   border-radius: 2px;
 }
 
+.item-grass {
+  width: 40px;
+  height: 40px;
+  background: #4a7c59;
+  border-radius: 2px;
+}
+
+.item-water {
+  width: 40px;
+  height: 40px;
+  background: #4a90e2;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.item-sand {
+  width: 40px;
+  height: 40px;
+  background: #f4e4bc;
+  border-radius: 2px;
+}
+
+.item-snow {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
 .item-count {
   position: absolute;
   bottom: 2px;

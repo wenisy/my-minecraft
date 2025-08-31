@@ -12,15 +12,35 @@ function Block({ position, type, onClick }) {
         return '#D2691E'
       case 'grass':
         return '#4a7c59'
+      case 'water':
+        return '#4a90e2'
+      case 'sand':
+        return '#f4e4bc'
+      case 'snow':
+        return '#ffffff'
       default:
         return '#808080'
     }
   }
 
+  const getBlockMaterial = (blockType) => {
+    const color = getBlockColor(blockType)
+    if (blockType === 'water') {
+      return (
+        <meshLambertMaterial
+          color={color}
+          transparent
+          opacity={0.7}
+        />
+      )
+    }
+    return <meshLambertMaterial color={color} />
+  }
+
   return (
     <mesh position={position} onClick={onClick}>
       <boxGeometry args={[1, 1, 1]} />
-      <meshLambertMaterial color={getBlockColor(type)} />
+      {getBlockMaterial(type)}
     </mesh>
   )
 }

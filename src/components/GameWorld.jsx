@@ -4,6 +4,8 @@ import { useGame } from '../game/GameContext'
 import Terrain from './Terrain'
 import Player from './Player'
 import Block from './Block'
+import Water from './Water'
+import Vegetation from './Vegetation'
 
 function GameWorld() {
   const controlsRef = useRef()
@@ -43,6 +45,8 @@ function GameWorld() {
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 10, 5]} intensity={1} />
       <Terrain onClick={handleGroundClick} />
+      <Water />
+      <Vegetation />
       <Player />
       {blocks.map(block => (
         <Block

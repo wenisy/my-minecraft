@@ -11,6 +11,8 @@ export function GameProvider({ children }) {
     { id: 1, position: [0, 1, 0], type: 'dirt' },
     { id: 2, position: [1, 1, 0], type: 'stone' },
     { id: 3, position: [0, 1, 1], type: 'wood' },
+    { id: 4, position: [-1, 1, 0], type: 'grass' },
+    { id: 5, position: [0, 1, -1], type: 'water' },
   ])
 
   const [selectedBlockType, setSelectedBlockType] = useState('dirt')
